@@ -7,7 +7,7 @@
 
 ## 🔧 Step 1: Update Nginx Configuration
 
-### Option A: Add to Existing Config
+### Add to Existing Config
 Edit your current nginx config file:
 ```bash
 git clone https://github.com/enoch-sit/flowiseProjectProxy.git
@@ -59,16 +59,6 @@ location /projectproxy/chat/ {
 }
 
 ```
-
-### Option B: Replace Complete Config
-Use the complete config file provided in `nginx-fixed-config.conf`
-
-## ⚠️ Important Fix Applied
-
-**Fixed Nginx Configuration Issue:**
-- Removed nested location blocks which caused: `location "/projectproxy" is outside location "/projectproxy/"`
-- Used separate `location = /projectproxy` for exact match redirect
-- This prevents nginx configuration test failures
 
 ## 🔄 Step 2: Test and Reload Nginx
 
