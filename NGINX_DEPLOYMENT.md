@@ -10,6 +10,7 @@
 ### Option A: Add to Existing Config
 Edit your current nginx config file:
 ```bash
+git clone https://github.com/enoch-sit/flowiseProjectProxy.git
 sudo nano /etc/nginx/sites-available/project-1-13
 ```
 
