@@ -74,13 +74,7 @@ sudo systemctl reload nginx
 
 ## 🚀 Step 3: Initial Service Setup
 
-1. **Upload Files to Server:**
-```bash
-# Copy the flowise-proxy-service-py-mini folder to your server
-scp -r flowise-proxy-service-py-mini/ proj13@project-1-13:~/
-```
-
-2. **Set Up Virtual Environment (Recommended):**
+1. **Set Up Virtual Environment (Recommended):**
 
 **Install Python Virtual Environment Package (if needed):**
 ```bash
@@ -107,7 +101,7 @@ source venv/bin/activate
 which python
 ```
 
-3. **Install Dependencies:**
+2. **Install Dependencies:**
 ```bash
 # With virtual environment activated
 cd backend
@@ -115,7 +109,7 @@ pip install -r requirements.txt
 cd ..
 ```
 
-4. **Configure Environment Variables:**
+3. **Configure Environment Variables:**
 ```bash
 # Create the .env configuration file
 cd backend
