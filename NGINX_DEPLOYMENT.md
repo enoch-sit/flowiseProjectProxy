@@ -11,7 +11,7 @@
 Edit your current nginx config file:
 ```bash
 git clone https://github.com/enoch-sit/flowiseProjectProxy.git
-sudo nano /etc/nginx/sites-available/project-1-13
+sudo nano /etc/nginx/sites-available/$HOSTNAME
 ```
 
 Add these location blocks **BEFORE** the root `location /` block:
