@@ -85,7 +85,7 @@ sudo apt install python3-venv -y
 
 **Create and Activate Virtual Environment:**
 ```bash
-cd ~/flowise-proxy-service-py-mini
+cd ~/flowiseProjectProxy
 
 # Create virtual environment
 python3 -m venv venv
@@ -166,7 +166,7 @@ sudo chmod +x maintain/manage.sh
 **2. Use the script:**
 ```bash
 # Navigate to your project directory
-cd ~/flowise-proxy-service-py-mini
+cd ~/flowiseProjectProxy
 
 # Start both services in the background
 ./maintain/manage.sh start
@@ -191,7 +191,7 @@ If you prefer not to use the script, you can run the commands manually.
 **1. Start Services in Background:**
 ```bash
 # Navigate to your project directory
-cd ~/flowise-proxy-service-py-mini
+cd ~/flowiseProjectProxy
 
 # Activate virtual environment
 source venv/bin/activate
@@ -217,7 +217,7 @@ echo "✅ Services running in background. Use 'ps aux' to verify."
 **Option A: Using PID files (created by the start commands above)**
 ```bash
 # Navigate to your project directory
-cd ~/flowise-proxy-service-py-mini
+cd ~/flowiseProjectProxy
 
 # Stop services
 kill $(cat backend.pid)
@@ -244,7 +244,7 @@ ps aux | grep -E 'uvicorn|frontend_server'
 **4. View Logs:**
 ```bash
 # Navigate to your project directory
-cd ~/flowise-proxy-service-py-mini
+cd ~/flowiseProjectProxy
 
 # View backend logs
 tail -f logs/backend.log
